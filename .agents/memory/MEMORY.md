@@ -1,0 +1,1 @@
+- [pnpm lockfile versions](pnpm-lockfile-regeneration.md) — regenerate lockfiles with the repository’s intended pnpm major; cross-major rewrites can drop config metadata.
