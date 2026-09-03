@@ -27,6 +27,22 @@ import {
   X,
 } from 'lucide-react';
 import { Link, Route, Switch, Router as WouterRouter, useLocation } from 'wouter';
+import dirtyExterior1 from '@assets/generated_images/tmd-dirty-exterior-1.jpg';
+import cleanExterior1 from '@assets/generated_images/tmd-clean-exterior-1.jpg';
+import dirtyInterior1 from '@assets/generated_images/tmd-dirty-interior-1.jpg';
+import cleanInterior1 from '@assets/generated_images/tmd-clean-interior-1.jpg';
+import dirtyExterior2 from '@assets/generated_images/tmd-dirty-exterior-2.jpg';
+import cleanExterior2 from '@assets/generated_images/tmd-clean-exterior-2.jpg';
+import dirtyInterior2 from '@assets/generated_images/tmd-dirty-interior-2.jpg';
+import cleanInterior2 from '@assets/generated_images/tmd-clean-interior-2.jpg';
+import dirtyExterior3 from '@assets/generated_images/tmd-dirty-exterior-3.jpg';
+import cleanExterior3 from '@assets/generated_images/tmd-clean-exterior-3.jpg';
+import dirtyInterior3 from '@assets/generated_images/tmd-dirty-interior-3.jpg';
+import cleanInterior3 from '@assets/generated_images/tmd-clean-interior-3.jpg';
+import dirtyExterior4 from '@assets/generated_images/tmd-dirty-exterior-4.jpg';
+import cleanExterior4 from '@assets/generated_images/tmd-clean-exterior-4.jpg';
+import dirtyInterior4 from '@assets/generated_images/tmd-dirty-interior-4.jpg';
+import cleanInterior4 from '@assets/generated_images/tmd-clean-interior-4.jpg';
 
 const queryClient = new QueryClient();
 
@@ -39,14 +55,14 @@ const images = {
 
 type GalleryItem = { id: number; category: string; title: string; before: string; after: string };
 const galleryItems: GalleryItem[] = [
-  { id: 1, category: 'Interior', title: 'The family SUV reset', before: 'https://images.pexels.com/photos/7144213/pexels-photo-7144213.jpeg?auto=compress&cs=tinysrgb&w=900', after: 'https://images.pexels.com/photos/6870304/pexels-photo-6870304.jpeg?auto=compress&cs=tinysrgb&w=900' },
-  { id: 2, category: 'Exterior', title: 'Pearl white, properly bright', before: 'https://images.pexels.com/photos/4489729/pexels-photo-4489729.jpeg?auto=compress&cs=tinysrgb&w=900', after: 'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=900' },
-  { id: 3, category: 'Interior', title: 'A quiet cabin again', before: 'https://images.pexels.com/photos/119435/pexels-photo-119435.jpeg?auto=compress&cs=tinysrgb&w=900', after: 'https://images.pexels.com/photos/4489732/pexels-photo-4489732.jpeg?auto=compress&cs=tinysrgb&w=900' },
-  { id: 4, category: 'Correction', title: 'Gloss brought back', before: 'https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=900', after: 'https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&w=900' },
-  { id: 5, category: 'Exterior', title: 'Black paint, no shortcuts', before: 'https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=900', after: 'https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=900' },
-  { id: 6, category: 'Interior', title: 'Work truck, weekend ready', before: 'https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=900', after: 'https://images.pexels.com/photos/193999/pexels-photo-193999.jpeg?auto=compress&cs=tinysrgb&w=900' },
-  { id: 7, category: 'Correction', title: 'Mirror finish for the weekend', before: 'https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&w=900', after: 'https://images.pexels.com/photos/1117132/pexels-photo-1117132.jpeg?auto=compress&cs=tinysrgb&w=900' },
-  { id: 8, category: 'Exterior', title: 'Daily driver, elevated', before: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=900', after: 'https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=900' },
+  { id: 1, category: 'Exterior', title: 'Road grime, rinsed away', before: dirtyExterior1, after: cleanExterior1 },
+  { id: 2, category: 'Interior', title: 'The family SUV reset', before: dirtyInterior1, after: cleanInterior1 },
+  { id: 3, category: 'Exterior', title: 'Dusty daily driver, bright again', before: dirtyExterior2, after: cleanExterior2 },
+  { id: 4, category: 'Interior', title: 'A quiet cabin again', before: dirtyInterior2, after: cleanInterior2 },
+  { id: 5, category: 'Exterior', title: 'Black paint, no shortcuts', before: dirtyExterior3, after: cleanExterior3 },
+  { id: 6, category: 'Interior', title: 'Work truck, weekend ready', before: dirtyInterior3, after: cleanInterior3 },
+  { id: 7, category: 'Exterior', title: 'Muddy pickup, clean finish', before: dirtyExterior4, after: cleanExterior4 },
+  { id: 8, category: 'Interior', title: 'From workday to spotless', before: dirtyInterior4, after: cleanInterior4 },
 ];
 
 function usePageMeta(title: string, description: string) {
@@ -233,7 +249,7 @@ function Gallery() {
       <div className="mx-auto max-w-[1240px] px-5 pb-16 pt-20 lg:px-8 lg:pb-24 lg:pt-28"><Reveal><SectionEyebrow light>Proof, not promises</SectionEyebrow><h1 className="display max-w-4xl text-[clamp(3.6rem,8vw,8rem)] font-semibold leading-[.85] tracking-[-.09em]">The difference<br /><span className="text-[#cbe95c]">is in the finish.</span></h1><p className="mt-8 max-w-lg text-base leading-7 text-[#f1eee7]/60">Every vehicle has a story. Here are a few we got to improve, one careful pass at a time.</p></Reveal></div>
     </section>
     <section className="site-grid"><div className="mx-auto max-w-[1240px] px-5 py-16 lg:px-8 lg:py-24">
-      <Reveal><div className="flex flex-wrap items-center justify-between gap-5 border-b border-[#20262e]/15 pb-5"><p className="mono text-[10px] uppercase tracking-[.18em] text-[#20262e]/55">{filtered.length.toString().padStart(2, '0')} transformations</p><div className="flex flex-wrap gap-2">{['All work', 'Interior', 'Exterior', 'Correction'].map((option) => <button type="button" key={option} onClick={() => setFilter(option)} className={`rounded-full border px-4 py-2 text-[10px] font-extrabold uppercase tracking-[.12em] transition-colors ${filter === option ? 'border-[#20262e] bg-[#20262e] text-[#f2f0e9]' : 'border-[#20262e]/20 hover:border-[#20262e]'}`} data-testid={`button-filter-${option.toLowerCase().replace(' ', '-')}`}>{option}</button>)}</div></div></Reveal>
+       <Reveal><div className="flex flex-wrap items-center justify-between gap-5 border-b border-[#20262e]/15 pb-5"><p className="mono text-[10px] uppercase tracking-[.18em] text-[#20262e]/55">{filtered.length.toString().padStart(2, '0')} transformations</p><div className="flex flex-wrap gap-2">{['All work', 'Interior', 'Exterior'].map((option) => <button type="button" key={option} onClick={() => setFilter(option)} className={`rounded-full border px-4 py-2 text-[10px] font-extrabold uppercase tracking-[.12em] transition-colors ${filter === option ? 'border-[#20262e] bg-[#20262e] text-[#f2f0e9]' : 'border-[#20262e]/20 hover:border-[#20262e]'}`} data-testid={`button-filter-${option.toLowerCase().replace(' ', '-')}`}>{option}</button>)}</div></div></Reveal>
       <div className="mt-10 grid gap-7 md:grid-cols-2">{filtered.map((item, index) => <Reveal key={item.id} delay={(index % 3) + 1}><article className="group"><div className="grid grid-cols-2 gap-2 overflow-hidden rounded-2xl"><div className="relative aspect-[.9] overflow-hidden bg-[#dfe1d7]"><SmartImage src={item.before} alt={`${item.title} before detailing`} className="h-full w-full grayscale-[.35] transition-transform duration-700 group-hover:scale-105" /><span className="absolute left-3 top-3 rounded-full bg-[#20262e]/80 px-2.5 py-1 text-[9px] font-bold uppercase tracking-[.15em] text-[#f2f0e9]">Before</span></div><div className="relative aspect-[.9] overflow-hidden bg-[#dfe1d7]"><SmartImage src={item.after} alt={`${item.title} after detailing`} className="h-full w-full transition-transform duration-700 group-hover:scale-105" /><span className="absolute left-3 top-3 rounded-full bg-[#cbe95c] px-2.5 py-1 text-[9px] font-bold uppercase tracking-[.15em] text-[#20262e]">After</span></div></div><div className="flex items-end justify-between border-b border-[#20262e]/15 py-5"><div><p className="mono text-[9px] uppercase tracking-[.18em] text-[#e25f37]">{item.category}</p><h2 className="display mt-2 text-2xl font-semibold tracking-[-.04em]">{item.title}</h2></div><span className="text-xs text-[#20262e]/35">0{index + 1}</span></div></article></Reveal>)}</div>
     </div></section>
     <section className="bg-[#e25f37]"><div className="mx-auto flex max-w-[1240px] flex-col justify-between gap-7 px-5 py-16 lg:flex-row lg:items-center lg:px-8"><div><SectionEyebrow light>Your car is next</SectionEyebrow><h2 className="display text-4xl font-semibold tracking-[-.06em] text-[#f2f0e9]">Give it the before.</h2></div><Link href="/book" className="flex w-fit items-center gap-3 rounded-full bg-[#20262e] px-6 py-4 text-xs font-extrabold uppercase tracking-[.13em] text-[#f2f0e9] transition-transform hover:-translate-y-1" data-testid="link-gallery-book">Book your detail <ArrowRight size={16} /></Link></div></section>
