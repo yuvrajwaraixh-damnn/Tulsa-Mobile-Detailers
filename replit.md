@@ -1,6 +1,6 @@
-# [Project name]
+# Tulsa Mobile Detailers
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A polished, mobile-first marketing website for a door-to-door car detailing service in Tulsa, Oklahoma.
 
 ## Run & Operate
 
@@ -22,23 +22,31 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/tulsa-mobile-detailers/src/App.tsx` — shared shell, routes, gallery data, and booking form
+- `artifacts/tulsa-mobile-detailers/src/index.css` — site tokens, layout utilities, grid texture, and motion
+- `artifacts/tulsa-mobile-detailers/vite.config.ts` — Vite artifact routing and preview configuration
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- The site is a frontend-only marketing experience; booking requests are confirmed in the UI and do not process payment.
+- Wouter provides the four-page route shell so navigation works without a backend.
+- Remote Pexels imagery is used for replaceable automotive/detailing placeholders, with a graceful image fallback.
+- Appointment validation uses the existing react-hook-form and Zod dependencies.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+- Home page introduces the mobile detailing service and four core services.
+- Gallery page shows eight before-and-after transformations with category filtering.
+- Book page collects customer and vehicle details and shows a confirmation state after submission.
+- Contact page provides phone, email, service area, hours, and a booking CTA.
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+No standing preferences recorded.
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- The frontend workflow supplies `PORT` and `BASE_PATH`; run the artifact through its managed workflow rather than starting Vite at the workspace root.
 
 ## Pointers
 

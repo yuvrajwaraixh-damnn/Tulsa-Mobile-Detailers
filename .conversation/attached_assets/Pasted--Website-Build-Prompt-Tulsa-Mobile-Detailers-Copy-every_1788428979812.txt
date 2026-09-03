@@ -1,0 +1,67 @@
+# Website Build Prompt — Tulsa Mobile Detailers
+
+Copy everything below into your website builder (Lovable, v0, Bolt, etc.)
+
+---
+
+Build a clean, modern, professional website for a mobile car detailing business.
+
+**Business name:** Tulsa Mobile Detailers
+**Business description:** A mobile car detailing service based in Tulsa, OK, USA. We come to the customer — door-to-door detailing at their home or office, no need to drive anywhere.
+
+**Overall design direction:**
+- Clean, modern, minimal aesthetic — feels premium and professional, not cluttered
+- Easy to navigate on both desktop and mobile
+- Generous white space, clear typography hierarchy, smooth subtle animations (fade-ins, slide-ups on scroll, hover effects) — nothing flashy or distracting
+- Color palette: dark charcoal/black + white, with one accent color (e.g. a deep blue or metallic silver/chrome) to reflect an automotive, high-end detailing feel
+- Use high-quality automotive imagery/placeholders (shiny cars, close-up detailing shots)
+- Sticky/simple navigation bar across all pages: Home, Gallery, Book Appointment, Contact
+
+---
+
+## Page 1: Home Page
+- Hero section with a bold headline (e.g. "Tulsa's Premier Mobile Detailing — We Come To You") and a subheadline mentioning door-to-door service in Tulsa, OK. Include a clear "Book Now" call-to-action button.
+- Animated "Our Services" section listing these services as cards or icons that animate in on scroll (fade/slide in one after another):
+  1. Interior Detailing
+  2. Exterior Detailing
+  3. Ceramic Coating
+  4. Rubbing & Polishing
+- Each service card should have a short 1-2 sentence description and a small icon or image.
+- A brief "Why Choose Us" section highlighting: mobile/door-to-door convenience, professional results, Tulsa-based, quality products.
+- A closing call-to-action banner directing users to the Book Appointment page.
+- Footer with business name, quick links, and social icons.
+
+## Page 2: Gallery Page
+- Clean grid layout showcasing "Before & After" transformations.
+- Use a before/after slider or side-by-side comparison cards for each set of images.
+- Include placeholder image pairs (at least 6-8 sets) that can later be replaced with real photos.
+- Simple filter or tabs by category (Interior / Exterior / Ceramic Coating) is a nice-to-have.
+
+## Page 3: Book Appointment Page
+- Minimal, uncluttered booking form with fields for:
+  - Name
+  - Phone number
+  - Email
+  - Address (for the mobile service location)
+  - Service needed (dropdown: Interior Detailing, Exterior Detailing, Ceramic Coating, Rubbing & Polishing)
+  - Preferred date and time
+  - Optional notes/message
+- Clear "Submit Request" or "Book Now" button
+- Reassuring confirmation message after submission
+- Keep the page visually light — no clutter, just the form and a short intro line confirming this is for the Tulsa, OK service area
+
+## Page 4: Contact Us Page
+- Simple, clean layout with:
+  - Business name and short tagline
+  - Email address (placeholder: info@tulsamobiledetailers.com)
+  - Social media icons/links: Instagram, Facebook, TikTok
+  - Optional embedded map showing Tulsa, OK service area
+  - Short note confirming service area (Tulsa, OK and surrounding areas)
+
+---
+
+**Technical notes:**
+- Fully responsive (mobile-first)
+- Smooth scroll animations throughout, especially on the Home page services section
+- Fast-loading, modern font pairing (e.g. a clean sans-serif for body + a slightly bolder sans-serif for headings)
+- Consistent header/footer across all 4 pages

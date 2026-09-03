@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Tulsa Mobile Detailers"
+description = "A premium mobile-first website for Tulsa Mobile Detailers, with service discovery, before-and-after gallery browsing, appointment requests, and contact information for customers in Tulsa and surrounding areas."
+version = "1.0.0"
+id = "artifacts/tulsa-mobile-detailers"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18171
+
+[services.development]
+run = "pnpm --filter @workspace/tulsa-mobile-detailers run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/tulsa-mobile-detailers", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/tulsa-mobile-detailers/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18171"
+BASE_PATH = "/"
