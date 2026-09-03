@@ -44,12 +44,13 @@ import cleanExterior4 from '@assets/generated_images/tmd-clean-exterior-4.jpg';
 import dirtyInterior4 from '@assets/generated_images/tmd-dirty-interior-4.jpg';
 import cleanInterior4 from '@assets/generated_images/tmd-clean-interior-4.jpg';
 import bookingCarWash from '@assets/generated_images/tmd-booking-car-wash.jpg';
+import detailWashCloseup from '@assets/generated_images/tmd-detail-wash-closeup.jpg';
 
 const queryClient = new QueryClient();
 
 const images = {
   hero: 'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1800',
-  detail: 'https://images.pexels.com/photos/6870304/pexels-photo-6870304.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  detail: detailWashCloseup,
   van: bookingCarWash,
   contact: 'https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&w=1600',
 };
